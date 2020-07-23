@@ -11,7 +11,7 @@ public class PruebaServicio : IPruebaServicio
 {
     int IPruebaServicio.Modulo(int value1, int value2)
     {
-		if (Math.Abs(value1) >= Math.Abs(value2))
+		if (value1 >= value2)
 		{
 			if (value2 == 0)
 			{

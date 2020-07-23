@@ -23,7 +23,7 @@ namespace WebPrueba.Net
             bool primNumVal = Int32.TryParse(txtmonto1.Text, out primerNum);
             bool segNumVal = Int32.TryParse(txtmonto2.Text, out segundoNum);
 
-            if (primNumVal && segNumVal)
+            if (txtmonto1.Text != string.Empty && txtmonto2.Text != string.Empty)
             {
                 int resultado = prueba.Modulo(primerNum, segundoNum);
                 if (resultado == -1)
@@ -38,8 +38,8 @@ namespace WebPrueba.Net
             }
             else
             {
-                Response.Write("<script>alert('Uno de los números ingresados no está en formato de número válido.')</script>");
-                lblResultado.Text = "";
+               
+                lblResultado.Text = "Aun no a ingresado valores";
             }
 
         }
