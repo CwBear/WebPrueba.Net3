@@ -13,13 +13,13 @@
             <asp:Label ID="lblmonto1" runat="server" Text="Monto 1"></asp:Label>
         </div>
         <p>
-            <asp:TextBox ID="txtmonto1" runat="server"></asp:TextBox>
+            <asp:TextBox type="number" ID="txtmonto1" runat="server"></asp:TextBox>
         </p>
         <p>
             <asp:Label ID="lblmonto2" runat="server" Text="Monto 2"></asp:Label>
         </p>
         <p>
-            <asp:TextBox ID="txtmonto2" runat="server"></asp:TextBox>
+            <asp:TextBox type="number" ID="txtmonto2" runat="server"></asp:TextBox>
         </p>
         <p>
             <asp:Button ID="btnCalcular" runat="server" OnClick="btnCalcular_Click" Text="Calcular" />
